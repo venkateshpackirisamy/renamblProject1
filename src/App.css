@@ -1,0 +1,147 @@
+.main {
+    /* position:absolute; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDE8F5;
+
+}
+
+.main>div {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    background-color: #C1C8E4;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 5px 10px #888888;
+    background-color: #aab4ce;
+}
+
+.descriprion {
+    padding: 10px;
+    overflow: auto;
+    scrollbar-width: none;
+    padding: 5px;
+
+}
+
+.select {
+    background-color: #8697C4;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px 0 10px
+}
+
+.select select {
+    height: 70%;
+    background-color: #EDE8F5;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.heading {
+    padding: 5px 0 5px 0;
+}
+
+.imgstyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+
+}
+
+.navbar>ul {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar {
+    background-color: #7189cc;
+}
+
+.navbar>button {
+    margin: 0 10px 0 10px;
+}
+
+
+.select>select:hover {
+    background-color: #bfcae8;
+}
+
+.select>select>option:hover {
+    background-color:  #8697C4;
+}
+
+.selectedCard {
+    background-color: #EDE8F5;
+    height: 92vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.selectedCard>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #C1C8E4;
+    border-radius: 25px;
+    padding: 15px;
+    width: 60%;
+    gap:10px;
+}
+
+.selectedCard>div>img {
+    border-radius: 20px;
+    width: 70%;
+}
+
+.selectedCard>div>p {
+    width: 68%;
+    overflow: auto;
+    height: auto;
+    scrollbar-width: none;
+}
+
+.selectedCard>div:hover {
+    box-shadow: 5px 10px #888888;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .selectedCard > div{
+  
+    width: 300px;
+    padding: 10px;
+
+  }
+  .selectedCard > div > img{
+    width: 200px;
+  }
+  }
